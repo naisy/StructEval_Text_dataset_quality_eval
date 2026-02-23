@@ -6,6 +6,8 @@ Local tooling to **(1) filter out grammatically invalid outputs** (JSON/YAML/TOM
 - Scored outputs are written under `scored_datasets/` with the **same directory structure** as `base_datasets/`.
 - `base_datasets/` is intentionally excluded from git commits and from the final project zip.
 
+![](data_quality_filter.png)
+
 ## Supported dataset families
 
 - **u-10bei**: uses `metadata.prompt` and `metadata.output`.
