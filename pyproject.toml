@@ -1,0 +1,5 @@
+[project]
+name = "dataset-quality-eval"
+version = "0.1.0"
+description = "Grammar + Ollama-based quality checks for SFT datasets"
+requires-python = ">=3.10"

@@ -1,0 +1,18 @@
+# Filter scored datasets by per-format minimum score thresholds.
+# Run after scoring:
+#   python -m dataset_eval.run_filter --config configs/filter.yaml
+
+scored_root: scored_datasets
+filtered_root: filtered_datasets
+
+# Keep examples only when evaluation.usable == true
+require_usable_flag: true
+
+# Minimum score thresholds per output format (0-100).
+# Keys are case-insensitive.
+min_score_by_format:
+  csv: 80
+  json: 80
+  yaml: 80
+  toml: 80
+  xml: 80

@@ -1,0 +1,20 @@
+# datasets are large and should not be committed
+/base_datasets/**
+!/base_datasets/.gitkeep
+
+# generated scored outputs
+/scored_datasets/**
+!/scored_datasets/.gitkeep
+
+# generated filtered outputs
+/filtered_datasets/**
+!/filtered_datasets/.gitkeep
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# misc
+.DS_Store

@@ -1,0 +1,11 @@
+CSV format checklist (the answer is intended to be CSV):
+- Output must be CSV text only (no explanation, no Markdown).
+- Must be parseable as CSV under standard rules (RFC 4180-like):
+  - Consistent number of columns per row.
+  - Quotes are balanced. If a field contains a quote, it must be escaped as doubled quotes ("").
+  - Commas inside quoted fields are allowed.
+  - Newlines inside quoted fields are allowed only if properly quoted.
+- Header/rows must match the task requirements (correct columns/flattening, no missing/extra required fields).
+- If instruction says “minified/remove whitespace”:
+  - Enforce no unnecessary whitespace outside of quoted fields (e.g., no spaces around delimiters or at line ends).
+  - Do NOT penalize whitespace that is part of the field content inside quotes.
